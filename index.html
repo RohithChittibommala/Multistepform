@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multistepform </title>
+    <script src="https://kit.fontawesome.com/af8253530c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="FORM.css">
+    <!-- name, gender, birthdate, country. -->
+</head>
+
+<body>
+    <div class="nav-bar">
+        <h1>STUDENT IDENTICO FORM</h1>
+    </div>
+    <div class="proces"></div>
+    <div class="container">
+        <div class="step1">
+            <h1><span>STEP:1 </span> Fill your values</h1>
+            <div>
+               Name: <input class="input input2 " id="name" type="text" required><i class="fas fa-check-circle"></i><i class="fas fa-exclamation-circle"></i>
+               <small>username cannot be blank</small>
+            </div>
+            <div>
+           <label class="gender"> Gender:</i><input type="radio" name="radio"> Male
+                    <input type="radio" name="radio" required> Female 
+                </label>
+
+            </div>
+            <div>
+ College:</i><input class="input input2" id="college" ><i class="fas fa-check-circle"></i><i class="fas fa-exclamation-circle"></i>
+    <small>college cannot be blank</small>
+            </div>
+            <div>
+            country:
+                    <select id="myList">
+                        <option value="1">India</option>
+                        <option value="2">Pakistan</option>
+                        <option value="3">China</option>
+                        <option value="4">USA</option>
+                        <option value="5">Australia</option>
+                        <option value="6">Tibet</option>
+                    </select>       
+            </div>
+
+
+
+            <button class="prev">prevoius</button>
+            <button class="next">next</button>
+        </div>
+        <div class="step2">
+            <h1><span>STEP:2 </span>Enter your Details</h1>
+            <div class="div">
+              Enter your email:
+                 <input type="text" id="email" class="input2"placeholder="Enter your email" >
+                 <small>email doesnot exist</small>
+            </div>
+            <div class="div">
+               Enter your password:
+                 <input type="password" id="psd" class="input2" placeholder="Enter your password" ><spani>view password</spani>
+                 <small>password cannot be empty
+                 </small>
+            </div>
+            <div class="div">
+               conform your password:
+                <input type="password" id="cpsd" class="input2" placeholder=" conform password">
+                <small>password doesnot match </small>
+
+            </div>
+            <button class="prev2">prevoius</button>
+            <button class="next Submit">Submit</button>
+
+
+        </div>
+        <div class="step3">
+        </div>
+    </div>
+    <script src="dorm.js"></script>
+
+</body>
+
+</html>
